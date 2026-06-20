@@ -28,7 +28,7 @@ management:
         include: health
   endpoint:
     health:
-      show-details: never
+      show-details: always
 
 app:
   project:
