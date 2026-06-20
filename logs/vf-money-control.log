@@ -1,0 +1,285 @@
+2026-06-20 16:32:36 [main] INFO  c.e.Vinayaga.VfMoneyControlApplication - Starting VfMoneyControlApplication using Java 24.0.2 with PID 12420 (D:\Kathir\Freelance_projects\VF-Money_Control\target\classes started by Kathir in d:\Kathir\Freelance_projects\VF-Money_Control)
+2026-06-20 16:32:36 [main] DEBUG c.e.Vinayaga.VfMoneyControlApplication - Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20 16:32:36 [main] INFO  c.e.Vinayaga.VfMoneyControlApplication - The following 1 profile is active: "default"
+2026-06-20 16:32:40 [main] INFO  liquibase.database - Set default schema name to public
+2026-06-20 16:32:44 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-06-20 16:32:45 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2026-06-20 16:32:45 [main] INFO  liquibase.command - Using deploymentId: 1953360033
+2026-06-20 16:32:45 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-06-20 16:32:45 [main] INFO  liquibase.ui - Running Changeset: db/changelog/V007_seed_test_projects.sql::001::kathiravan
+2026-06-20 16:32:45 [main] INFO  liquibase.changelog - Custom SQL executed
+2026-06-20 16:32:45 [main] INFO  liquibase.changelog - ChangeSet db/changelog/V007_seed_test_projects.sql::001::kathiravan ran successfully in 42ms
+2026-06-20 16:32:45 [main] INFO  liquibase.ui - Running Changeset: db/changelog/V008_seed_test_transactions.sql::001::kathiravan
+2026-06-20 16:32:45 [main] INFO  liquibase.changelog - Custom SQL executed
+2026-06-20 16:32:45 [main] INFO  liquibase.changelog - ChangeSet db/changelog/V008_seed_test_transactions.sql::001::kathiravan ran successfully in 42ms
+2026-06-20 16:32:45 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-06-20 16:32:45 [main] INFO  liquibase.util - Run:                          2
+2026-06-20 16:32:45 [main] INFO  liquibase.util - Previously run:               9
+2026-06-20 16:32:45 [main] INFO  liquibase.util - Filtered out:                 0
+2026-06-20 16:32:45 [main] INFO  liquibase.util - -------------------------------
+2026-06-20 16:32:45 [main] INFO  liquibase.util - Total change sets:           11
+2026-06-20 16:32:45 [main] INFO  liquibase.util - Update summary generated
+2026-06-20 16:32:45 [main] INFO  liquibase.command - Update command completed successfully.
+2026-06-20 16:32:45 [main] INFO  liquibase.ui - Liquibase: Update has been successful. Rows affected: 20
+2026-06-20 16:32:45 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2026-06-20 16:32:45 [main] INFO  liquibase.command - Command execution complete
+2026-06-20 16:32:51 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20 16:32:52 [main] INFO  c.e.Vinayaga.VfMoneyControlApplication - Started VfMoneyControlApplication in 17.094 seconds (process running for 17.888)
+2026-06-20 16:38:07 [main] INFO  c.e.Vinayaga.VfMoneyControlApplication - Starting VfMoneyControlApplication using Java 24.0.2 with PID 15280 (D:\Kathir\Freelance_projects\VF-Money_Control\target\classes started by Kathir in D:\Kathir\Freelance_projects\VF-Money_Control)
+2026-06-20 16:38:07 [main] DEBUG c.e.Vinayaga.VfMoneyControlApplication - Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20 16:38:07 [main] INFO  c.e.Vinayaga.VfMoneyControlApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-20 16:38:12 [main] INFO  liquibase.database - Set default schema name to public
+2026-06-20 16:38:16 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-06-20 16:38:16 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-06-20 16:38:16 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-06-20 16:38:16 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-06-20 16:38:16 [main] INFO  liquibase.util - Run:                          0
+2026-06-20 16:38:16 [main] INFO  liquibase.util - Previously run:              11
+2026-06-20 16:38:16 [main] INFO  liquibase.util - Filtered out:                 0
+2026-06-20 16:38:16 [main] INFO  liquibase.util - -------------------------------
+2026-06-20 16:38:16 [main] INFO  liquibase.util - Total change sets:           11
+2026-06-20 16:38:16 [main] INFO  liquibase.util - Update summary generated
+2026-06-20 16:38:16 [main] INFO  liquibase.command - Command execution complete
+2026-06-20 16:38:23 [main] WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-20 16:38:24 [main] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-06-20 16:38:24 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-06-20 16:40:27 [main] INFO  c.e.Vinayaga.VfMoneyControlApplication - Starting VfMoneyControlApplication using Java 24.0.2 with PID 12836 (D:\Kathir\Freelance_projects\VF-Money_Control\target\classes started by Kathir in d:\Kathir\Freelance_projects\VF-Money_Control)
+2026-06-20 16:40:27 [main] DEBUG c.e.Vinayaga.VfMoneyControlApplication - Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20 16:40:27 [main] INFO  c.e.Vinayaga.VfMoneyControlApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-20 16:40:30 [main] INFO  liquibase.database - Set default schema name to public
+2026-06-20 16:40:33 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-06-20 16:40:33 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-06-20 16:40:33 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-06-20 16:40:33 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-06-20 16:40:33 [main] INFO  liquibase.util - Run:                          0
+2026-06-20 16:40:33 [main] INFO  liquibase.util - Previously run:              11
+2026-06-20 16:40:33 [main] INFO  liquibase.util - Filtered out:                 0
+2026-06-20 16:40:33 [main] INFO  liquibase.util - -------------------------------
+2026-06-20 16:40:33 [main] INFO  liquibase.util - Total change sets:           11
+2026-06-20 16:40:33 [main] INFO  liquibase.util - Update summary generated
+2026-06-20 16:40:33 [main] INFO  liquibase.command - Command execution complete
+2026-06-20 16:40:38 [main] INFO  c.e.Vinayaga.VfMoneyControlApplication - Started VfMoneyControlApplication in 11.575 seconds (process running for 12.497)
+2026-06-20 16:40:55 [main] INFO  c.e.Vinayaga.VfMoneyControlApplication - Starting VfMoneyControlApplication using Java 24.0.2 with PID 748 (D:\Kathir\Freelance_projects\VF-Money_Control\target\classes started by Kathir in D:\Kathir\Freelance_projects\VF-Money_Control)
+2026-06-20 16:40:55 [main] DEBUG c.e.Vinayaga.VfMoneyControlApplication - Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20 16:40:55 [main] INFO  c.e.Vinayaga.VfMoneyControlApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-20 16:40:58 [main] INFO  liquibase.database - Set default schema name to public
+2026-06-20 16:41:01 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-06-20 16:41:01 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-06-20 16:41:01 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-06-20 16:41:01 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-06-20 16:41:01 [main] INFO  liquibase.util - Run:                          0
+2026-06-20 16:41:01 [main] INFO  liquibase.util - Previously run:              11
+2026-06-20 16:41:01 [main] INFO  liquibase.util - Filtered out:                 0
+2026-06-20 16:41:01 [main] INFO  liquibase.util - -------------------------------
+2026-06-20 16:41:01 [main] INFO  liquibase.util - Total change sets:           11
+2026-06-20 16:41:01 [main] INFO  liquibase.util - Update summary generated
+2026-06-20 16:41:01 [main] INFO  liquibase.command - Command execution complete
+2026-06-20 16:41:08 [main] WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-06-20 16:41:08 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-06-20 16:42:11 [main] INFO  c.e.Vinayaga.VfMoneyControlApplication - Starting VfMoneyControlApplication using Java 24.0.2 with PID 8520 (D:\Kathir\Freelance_projects\VF-Money_Control\target\classes started by Kathir in D:\Kathir\Freelance_projects\VF-Money_Control)
+2026-06-20 16:42:11 [main] DEBUG c.e.Vinayaga.VfMoneyControlApplication - Running with Spring Boot v4.1.0, Spring v7.0.8
+2026-06-20 16:42:11 [main] INFO  c.e.Vinayaga.VfMoneyControlApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-20 16:42:14 [main] INFO  liquibase.database - Set default schema name to public
+2026-06-20 16:42:16 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-06-20 16:42:16 [main] INFO  liquibase.ui - Database is up to date, no changesets to execute
+2026-06-20 16:42:16 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2026-06-20 16:42:16 [main] INFO  liquibase.util - UPDATE SUMMARY
+2026-06-20 16:42:16 [main] INFO  liquibase.util - Run:                          0
+2026-06-20 16:42:16 [main] INFO  liquibase.util - Previously run:              11
+2026-06-20 16:42:16 [main] INFO  liquibase.util - Filtered out:                 0
+2026-06-20 16:42:16 [main] INFO  liquibase.util - -------------------------------
+2026-06-20 16:42:16 [main] INFO  liquibase.util - Total change sets:           11
+2026-06-20 16:42:16 [main] INFO  liquibase.util - Update summary generated
+2026-06-20 16:42:16 [main] INFO  liquibase.command - Command execution complete
+2026-06-20 16:42:21 [main] INFO  c.e.Vinayaga.VfMoneyControlApplication - Started VfMoneyControlApplication in 11.545 seconds (process running for 12.765)
+2026-06-20 16:46:32 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-20 16:46:32 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 61 ms
+2026-06-20 16:47:12 [http-nio-8080-exec-2] DEBUG c.e.Vinayaga.service.DashboardService - Building global dashboard
+2026-06-20 16:47:13 [http-nio-8080-exec-2] INFO  c.e.Vinayaga.service.DashboardService - Dashboard: totalProjects=3 active=2 income=1200000.00 expense=640000.00 net=560000.00
+2026-06-20 16:47:47 [http-nio-8080-exec-4] DEBUG c.e.Vinayaga.service.ProjectService - Fetching projects: status='null' page=0 size=10
+2026-06-20 16:47:47 [http-nio-8080-exec-4] DEBUG c.e.Vinayaga.service.ProjectService - Found 3 projects (total=3)
+2026-06-20 16:48:01 [http-nio-8080-exec-5] DEBUG c.e.Vinayaga.service.ProjectService - Fetching projects: status='null' page=0 size=10
+2026-06-20 16:48:01 [http-nio-8080-exec-5] DEBUG c.e.Vinayaga.service.ProjectService - Found 3 projects (total=3)
+2026-06-20 16:48:16 [http-nio-8080-exec-6] DEBUG c.e.Vinayaga.service.ProjectService - Fetching projects: status='null' page=0 size=10
+2026-06-20 16:48:16 [http-nio-8080-exec-6] DEBUG c.e.Vinayaga.service.ProjectService - Found 3 projects (total=3)
+2026-06-20 16:48:29 [http-nio-8080-exec-7] DEBUG c.e.Vinayaga.service.ProjectService - Fetching projects: status='null' page=0 size=10
+2026-06-20 16:48:29 [http-nio-8080-exec-7] DEBUG c.e.Vinayaga.service.ProjectService - Found 3 projects (total=3)
+2026-06-20 16:48:44 [http-nio-8080-exec-8] ERROR c.e.V.exception.GlobalExceptionHandler - Unexpected error: Method parameter 'projectId': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "{1}"
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'projectId': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "{1}"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:295)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:134)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:224)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:174)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: java.lang.NumberFormatException: For input string: "{1}"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+	at java.base/java.lang.Long.parseLong(Long.java:594)
+	at java.base/java.lang.Long.valueOf(Long.java:950)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:204)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:434)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:407)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:158)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:75)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:51)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:844)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:287)
+	... 43 common frames omitted
+2026-06-20 16:48:57 [http-nio-8080-exec-10] DEBUG c.e.Vinayaga.service.ProjectService - Fetching projects: status='null' page=0 size=10
+2026-06-20 16:48:57 [http-nio-8080-exec-10] DEBUG c.e.Vinayaga.service.ProjectService - Found 3 projects (total=3)
+2026-06-20 16:49:34 [http-nio-8080-exec-1] DEBUG c.e.Vinayaga.service.ProjectService - Fetching project details: projectId=1
+2026-06-20 16:49:34 [http-nio-8080-exec-1] DEBUG c.e.Vinayaga.service.ProjectService - Project 1 financials: income=350000.00 expense=180000.00 balance=170000.00
+2026-06-20 16:49:51 [http-nio-8080-exec-3] ERROR c.e.V.exception.GlobalExceptionHandler - Unexpected error: Request method 'GET' is not supported
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:260)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:434)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:376)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:116)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:544)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1157)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:951)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-06-20 16:50:34 [http-nio-8080-exec-4] ERROR c.e.V.exception.GlobalExceptionHandler - Unexpected error: No static resource api/v1/projects/1/transaction for request '/api/v1/projects/1/transaction'.
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/v1/projects/1/transaction for request '/api/v1/projects/1/transaction'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:527)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2026-06-20 16:50:37 [http-nio-8080-exec-6] DEBUG c.e.Vinayaga.service.TransactionService - Fetching transactions: projectId=1 categoryType='null' categoryId=null from=null to=null page=0 size=20
+2026-06-20 16:50:37 [http-nio-8080-exec-6] DEBUG c.e.Vinayaga.service.TransactionService - Found 6 transactions for projectId=1
+2026-06-20 16:51:01 [http-nio-8080-exec-7] DEBUG c.e.Vinayaga.service.TransactionService - Generating report: from=null to=null projectId=null type='null'
+2026-06-20 16:51:01 [http-nio-8080-exec-7] WARN  c.e.V.exception.GlobalExceptionHandler - Business validation failed: fromDate and toDate are required
+2026-06-20 16:52:32 [http-nio-8080-exec-9] DEBUG c.e.Vinayaga.service.TransactionService - Generating report: from=2025-01-01 to=2025-06-30 projectId=1 type='INCOME'
+2026-06-20 16:52:32 [http-nio-8080-exec-9] INFO  c.e.Vinayaga.service.TransactionService - Report generated: from=2025-01-01 to=2025-06-30 projectId=1 transactions=3 income=350000.00 expense=0 net=350000.00

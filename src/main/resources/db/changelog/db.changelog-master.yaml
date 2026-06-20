@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/V001_create_project_sequence.sql
+
+  - include:
+      file: db/changelog/V002_create_categories_table.sql
+
+  - include:
+      file: db/changelog/V003_create_projects_table.sql
+
+  - include:
+      file: db/changelog/V004_create_transactions_table.sql
+
+  - include:
+      file: db/changelog/V005_create_indexes.sql
+
+  - include:
+      file: db/changelog/V006_seed_categories.sql
+
+  - include:
+      file: db/changelog/V007_seed_test_projects.sql
+
+  - include:
+      file: db/changelog/V008_seed_test_transactions.sql
