@@ -7,7 +7,7 @@ WORKDIR /build
 COPY pom.xml .
 RUN mvn dependency:go-offline -q
 
-# Copy source and build the fat JAR, skipping tests (no test sources exist)
+# Copy source and build the fat JAR, skipping tests
 COPY src ./src
 RUN mvn package -DskipTests -q
 
@@ -22,11 +22,11 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 # Copy only the fat JAR from the build stage
 COPY --from=builder /build/target/*.jar app.jar
 
-# Create logs directory owned by appuser
-RUN mkdir -p /app/logs && chown -R appuser:appgroup /app
+RUN chown -R appuser:appgroup /app
 
 USER appuser
 
-EXPOSE 8080
+# Railway injects PORT dynamically — Spring reads it via server.port=${PORT:8080}
+EXPOSE ${PORT:-8080}
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-XX:+UseContainerSupport", "-XX:MaxRAMPercentage=75.0", "-jar", "app.jar"]
