@@ -20,6 +20,8 @@ public class ProjectResponse {
     private String projectName;
     private String clientName;
     private String location;
+    private Double latitude;
+    private Double longitude;
     private BigDecimal contractValue;
     private LocalDate startDate;
     private LocalDate expectedEndDate;
