@@ -18,13 +18,10 @@ databaseChangeLog:
       file: db/changelog/V006_seed_categories.sql
 
   - include:
-      file: db/changelog/V007_seed_test_projects.sql
-
-  - include:
-      file: db/changelog/V008_seed_test_transactions.sql
-
-  - include:
       file: db/changelog/V009_create_todos_table.sql
 
   - include:
       file: db/changelog/V010_add_project_location_coordinates.sql
+
+  - include:
+      file: db/changelog/V011_delete_test_data.sql
