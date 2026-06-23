@@ -33,10 +33,10 @@ public class Project {
     @Column(name = "location")
     private String location;
 
-    @Column(name = "latitude")
+    @Column(name = "latitude", columnDefinition = "numeric")
     private Double latitude;
 
-    @Column(name = "longitude")
+    @Column(name = "longitude", columnDefinition = "numeric")
     private Double longitude;
 
     @Column(name = "contract_value")
