@@ -70,4 +70,10 @@ public class ProjectController {
         ProjectResponse response = projectService.changeProjectStatus(projectId, status);
         return ResponseEntity.ok(ApiResponse.success("Project status updated successfully", response));
     }
+
+    @DeleteMapping("/{projectId}")
+    public ResponseEntity<ApiResponse<Void>> deleteProject(@PathVariable Long projectId) {
+        projectService.deleteProject(projectId);
+        return ResponseEntity.ok(ApiResponse.success("Project deleted successfully", null));
+    }
 }

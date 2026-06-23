@@ -15,6 +15,8 @@ public interface TransactionRepository extends JpaRepository<Transaction, Long> 
 
     // --- Listing queries ---
 
+    void deleteByProject_ProjectId(Long projectId);
+
     Page<Transaction> findByProject_ProjectId(Long projectId, Pageable pageable);
 
     Page<Transaction> findByProject_ProjectIdAndCategory_CategoryType(

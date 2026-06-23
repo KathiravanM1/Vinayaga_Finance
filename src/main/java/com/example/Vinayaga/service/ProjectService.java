@@ -157,6 +157,22 @@ public class ProjectService {
     }
 
     // -------------------------------------------------------------------------
+    // Delete
+    // -------------------------------------------------------------------------
+
+    @Transactional
+    public void deleteProject(Long projectId) {
+        log.debug("Deleting project: projectId={}", projectId);
+
+        Project project = findProjectOrThrow(projectId);
+
+        transactionRepository.deleteByProject_ProjectId(projectId);
+        projectRepository.delete(project);
+
+        log.info("Project deleted: id={} code='{}'", projectId, project.getProjectCode());
+    }
+
+    // -------------------------------------------------------------------------
     // Status change
     // -------------------------------------------------------------------------
 
