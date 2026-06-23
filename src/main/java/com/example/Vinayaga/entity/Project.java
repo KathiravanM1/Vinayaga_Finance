@@ -33,6 +33,12 @@ public class Project {
     @Column(name = "location")
     private String location;
 
+    @Column(name = "latitude")
+    private Double latitude;
+
+    @Column(name = "longitude")
+    private Double longitude;
+
     @Column(name = "contract_value")
     private BigDecimal contractValue;
 

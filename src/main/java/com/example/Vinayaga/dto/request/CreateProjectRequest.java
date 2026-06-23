@@ -28,6 +28,14 @@ public class CreateProjectRequest {
     @Size(max = 255, message = "Location must not exceed 255 characters")
     private String location;
 
+    @DecimalMin(value = "-90.0", message = "Latitude must be >= -90")
+    @DecimalMax(value = "90.0",  message = "Latitude must be <= 90")
+    private Double latitude;
+
+    @DecimalMin(value = "-180.0", message = "Longitude must be >= -180")
+    @DecimalMax(value = "180.0",  message = "Longitude must be <= 180")
+    private Double longitude;
+
     @DecimalMin(value = "0.01", message = "Contract value must be greater than 0")
     @Digits(integer = 13, fraction = 2, message = "Contract value must have at most 13 integer digits and 2 decimal places")
     private BigDecimal contractValue;

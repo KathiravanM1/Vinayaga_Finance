@@ -4,6 +4,7 @@ import com.example.Vinayaga.config.AppConfig;
 import com.example.Vinayaga.dto.request.CreateProjectRequest;
 import com.example.Vinayaga.dto.response.PagedResponse;
 import com.example.Vinayaga.dto.response.ProjectDetailResponse;
+import com.example.Vinayaga.dto.response.ProjectLocationResponse;
 import com.example.Vinayaga.dto.response.ProjectResponse;
 import com.example.Vinayaga.entity.Project;
 import com.example.Vinayaga.exception.BusinessValidationException;
@@ -104,6 +105,22 @@ public class ProjectService {
         return projectMapper.toDetailResponse(project, totalIncome, totalExpense, balance);
     }
 
+    @Transactional(readOnly = true)
+    public ProjectLocationResponse getProjectLocation(Long projectId) {
+        Project project = findProjectOrThrow(projectId);
+        String mapUrl = (project.getLatitude() != null && project.getLongitude() != null)
+                ? "https://www.google.com/maps?q=" + project.getLatitude() + "," + project.getLongitude()
+                : null;
+        return ProjectLocationResponse.builder()
+                .projectId(project.getProjectId())
+                .projectName(project.getProjectName())
+                .location(project.getLocation())
+                .latitude(project.getLatitude())
+                .longitude(project.getLongitude())
+                .shareableMapUrl(mapUrl)
+                .build();
+    }
+
     // -------------------------------------------------------------------------
     // Update
     // -------------------------------------------------------------------------
@@ -125,6 +142,8 @@ public class ProjectService {
         project.setProjectName(request.getProjectName());
         project.setClientName(request.getClientName());
         project.setLocation(request.getLocation());
+        project.setLatitude(request.getLatitude());
+        project.setLongitude(request.getLongitude());
         project.setContractValue(request.getContractValue());
         project.setStartDate(request.getStartDate());
         project.setExpectedEndDate(request.getExpectedEndDate());

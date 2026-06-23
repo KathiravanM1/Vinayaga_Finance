@@ -4,6 +4,7 @@ import com.example.Vinayaga.dto.request.CreateProjectRequest;
 import com.example.Vinayaga.dto.response.ApiResponse;
 import com.example.Vinayaga.dto.response.PagedResponse;
 import com.example.Vinayaga.dto.response.ProjectDetailResponse;
+import com.example.Vinayaga.dto.response.ProjectLocationResponse;
 import com.example.Vinayaga.dto.response.ProjectResponse;
 import com.example.Vinayaga.service.ProjectService;
 import jakarta.validation.Valid;
@@ -46,6 +47,12 @@ public class ProjectController {
             @PathVariable Long projectId) {
         ProjectDetailResponse response = projectService.getProjectDetails(projectId);
         return ResponseEntity.ok(ApiResponse.success(response));
+    }
+
+    @GetMapping("/{projectId}/location")
+    public ResponseEntity<ApiResponse<ProjectLocationResponse>> getProjectLocation(
+            @PathVariable Long projectId) {
+        return ResponseEntity.ok(ApiResponse.success(projectService.getProjectLocation(projectId)));
     }
 
     @PutMapping("/{projectId}")
